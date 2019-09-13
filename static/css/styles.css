@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+body {
+    background-color: rgb(231, 231, 219);
+    font-family: 'Nunito', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.header-image {
+    background: url("../images/HOME_Header_Image.jpg");
+}
+
+.hire-header {
+    background: url("../images/Hire/00 HIRE Header Image.jpg");
+}
+
+.about-header {
+    background: url("../images/about/00 ABOUT Header Image.jpg");
+}
+
+
+.header-image,
+.hire-header,
+.about-header {
+    background-color: #cccccc;
+    width: 100vw;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #e7e7db;
+}
+
+.white-text {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.white-text h2 {
+    text-align: right;
+    font-size: 1em;
+    position: relative;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.header-hire {
+    font-weight: 700;
+    color: white;
+}
+
+.header-hire:hover {
+    opacity: 0.5;
+    color: #fafafa;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.terms-conditions {
+    color: #000000;
+    font-weight: 700;
+}
+
+.terms-conditions:hover {
+    color: #838d83;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+@media(min-width:992px) {
+    .white-text {
+        left: 30%;
+    }
+
+    .header-image,
+    .hire-header {
+        width: 100vw;
+        height: 35vw;
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .about-header {
+        width: 100vw;
+        height: 300px;
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .white-text h2 {
+        text-align: right;
+        font-size: 1.5em;
+        position: relative;
+        top: 100px;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+@media(min-width:1200px) {
+    .white-text {
+        top: 15vh;
+    }
+}
+
+.social-link {
+    opacity: 0.7;
+    width: 30px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.social-link img {
+    width: 2em;
+}
+
+.social-link:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+
+}
+
+/*---------homepage images*/
+
+.homepage-image img {
+    position: relative;
+    height: auto;
+    width: 90vw;
+}
+
+
+.hire-me-background {
+    background-color: #aebcaf;
+    height: auto;
+    width: 90vw;
+
+}
+
+.hire-me-background:hover {
+    background-color: #79827a;
+    text-decoration: none;
+}
+
+.padding-box {
+    padding: 5vw;
+    margin: 0
+}
+
+.homepage-image figure img {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.homepage-image figure {
+    background-color: #595f5a;
+    background-clip: content-box;
+}
+
+.center-text {
+    text-align: center;
+}
+
+figure-caption {
+    position: absolute;
+    text-align: left;
+    font-size:10px;
+    top: 10%;
+    left: 2em;
+    width: 80%;
+    color: #fafafa;
+}
+
+.hire-me-text {
+    position: relative;
+    text-align: left;
+    font-size: 1.5em;
+    top: 10%;
+    left: 1.5em;
+    width: 60%;
+    color: #fafafa;
+    font-weight: 700;
+}
+
+.hire-me-text h3 {
+    font-size: 150%;
+    font-weight: 700;
+}
+@media(min-width:1200px) {
+  .hire-me-text h3 {
+    font-size: 200%;
+}
+}
+
+
+figure-caption p {
+    font-size: 1.2em
+}
+
+figure-caption {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+/*---------------------------------hompage @media*/
+
+@media(min-width:992px) {
+    .homepage-image figure {
+        position: relative;
+        height: 29vw;
+        width: auto;
+        padding: 1vw;
+    }
+
+    .homepage-image figure img {
+        height: 100%;
+        width: auto;
+        opacity: 1;
+    }
+    .padding-box {
+        padding: 4vw 1vw;
+        margin: 0
+    }
+    .hire-me-background {
+        background-color: #aebcaf;
+        height: 27vw;
+        width: 20vw;
+    }
+    .homepage-image {
+        padding: 5px 10px 0 10px;
+    }
+
+    figure-caption {
+        opacity: 0;
+        font-size:1em;
+    }
+}
+
+/*-------------------footer*/
+
+.social-bottom {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+    text-align: center;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.social-bottom li {
+    display: inline-grid;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-text {
+    text-align: center;
+    color: #c5956a
+}
+
+/*------------about image*/
+
+.portrate {
+    background: url("/assets/images/about/00 ABOUT Portrait.jpg");
+    height: 100%;
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.portrate:hover {
+    background: url("/assets/images/about/00 ABOUT Foto.jpg");
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media(min-width:992px) {
+    .portrate {
+        min-height: 450px;
+    }
+}
