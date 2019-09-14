@@ -12,7 +12,7 @@
 <header>
     <div class="col-6  white-text">
         <h2>Hi! I‘m Zorika and I‘m a visual storyteller.</h2>
-        <h2>You can read my comics below or <a class="header-hire" href="hire.html">hire me</a> as</h2>
+        <h2>You can read my comics below or <a class="header-hire" href="{% url 'hire' %}">hire me</a> as</h2>
         <h2> an artist for your comic project.</h2>
     </div>
 </header>
@@ -26,7 +26,7 @@
     <div class="row no-gutters">
 
         <div class="col homepage-image">
-            <a href="/wherenoonegoes/home.html" target="_blank">
+            <a href="http://akiroteacomics.com/wherenoonegoes/home.html" target="_blank">
                 <figure>
                     <img src="{{ MEDIA_URL }}images/01 WNG Image.jpg"></img>
                 </figure>
@@ -37,7 +37,7 @@
             </a>
         </div>
         <div class="col homepage-image">
-            <a href="/wherenoonegoes/home.html" target="_blank">
+            <a href="http://akiroteacomics.com/wherenoonegoes/home.html" target="_blank">
                 <figure>
                     <img src="{{ MEDIA_URL }}images/02 WNL Image.jpg"></img>
                 </figure>
@@ -85,7 +85,7 @@
             </a>
         </div>
         <div class="col homepage-image">
-            <a href="hire.html" target="_blank">
+            <a href="{% url 'hire' %}" target="_blank">
                 <figure>
                     <div class="hire-me-background">
                         <div class="hire-me-text">
