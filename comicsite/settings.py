@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_forms_bootstrap',
     'home',
+    'hire',
     'shop',
     'mycart',
     'checkout',
@@ -69,7 +70,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
-                'mycart.contexts.cart_contents'
+                'mycart.contexts.cart_contents',
+                'hire.contexts.make_an_estimate'
             ],
         },
     },
