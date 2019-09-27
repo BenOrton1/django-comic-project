@@ -9,14 +9,12 @@ from django.utils import timezone
 
 def hire(request, pk=None):
     """A view that displays the hire page"""
-    initial={'number_of_pages': request.session.get('number_of_pages', None)}
-    commition = get_object_or_404(Commition, pk=pk) if pk else None
-    form = CommitionForm(request.POST or None, initial=initial)
+    form = CommitionForm(request.POST)
     if request.method == "POST":
-        form = CommitionForm(request.POST, request.FILES, instance=commition)
+        form = CommitionForm(request.POST, request.FILES)
         if form.is_valid():
             form = form.save()
-            return redirect(make_estimate, commition.pk)
+            return redirect(make_estimate, form.pk)
     return render(request, "hire.html", {'form':form})
     
 
