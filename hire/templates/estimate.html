@@ -1,6 +1,11 @@
-{% extends 'base.html' %} {% block headerimage %}
+{% extends 'base.html' %} {% load static from staticfiles %} {% load bootstrap_tags %} {% block headerimage %}
 
+<div class="container-fluid hire-header">
 
-    <h1>number of pages is {{number_of_pages}}</h1>
+    {% endblock %} {% block header %}
+    
+    {% endblock %} {% block content %}
+    
+    <h1>number of pages is {{this_estimate.number_of_pages}}</h1>
 
     {% endblock %}

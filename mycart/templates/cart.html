@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
+ {% block headerimage %}
 
+<div class="container-fluid about-header">
+
+    {% endblock %}
 {% block content %}
 <div class="row row-flex">
     {% for item in cart_items %}
