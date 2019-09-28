@@ -2,11 +2,13 @@
 
 <div class="container-fluid hire-header">
 
-    {% endblock %} {% block header %}
-    
-    {% endblock %} {% block content %}
-    
-    <h1>number of pages is {{this_estimate.number_of_pages}}</h1>
-    <h1>£{{ Total }}</h1>
+    {% endblock %} {% block header %} {% endblock %} {% block content %}
 
-    {% endblock %}
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-xs-12">
+            <p>Thank you for your enquirey.</p>
+            <p>The estimated cost of this project is £{{total}}</p>
+            <p>I will contact you soon thought your email address {{this_estimate.email}}</p>
+        </div>
+    </div>
+    <a href="{% url 'index' %}">Return Home</a> {% endblock %}

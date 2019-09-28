@@ -32,4 +32,3 @@ class Commition(models.Model):
     number_of_pages = models.IntegerField()
     deadline = models.DateField(blank=False)
     email = models.EmailField(blank=False)
-

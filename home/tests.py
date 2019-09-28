@@ -14,8 +14,3 @@ class TestViews(TestCase):
         page = self.client.get("/about")
         self.assertEqual(page.status_code, 200)
         self.assertTemplateUsed(page, "about.html")
-
-    def test_get_hire_page(self):
-        page = self.client.get("/hire")
-        self.assertEqual(page.status_code, 200)
-        self.assertTemplateUsed(page, "hire.html")
