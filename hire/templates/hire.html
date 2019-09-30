@@ -13,7 +13,7 @@
     </header>
 
 
-    {% endblock %}         {% block content %}
+    {% endblock %} {% block content %}
 
     <div class="row justify-content-center no-gutters padding-box">
         <div class="col-md-6 col-xl-4">
@@ -23,47 +23,19 @@ https://docs.google.com/document/d/1wI55-p5C-8IHq_omSDIjhejJg29IcYCzXci-ePbkt-o/
 
             <p>To give you an accurate price estimate I‘ll need to know the following:</p>
 
-            <p>1. What do you want?
-                <ul>
-                    <li>Just lineart or colour? What style do you have in mind? Do you have examples? </li>
-                    <li>Will you need a cover? </li>
-                    <li>What is the setting and genre?</li>
-                    <li>How many characters are involved? Are there animals? A script would be ideal.</li>
-                </ul>
-            </p>
-
-            <p>2. Specifications. Examples:
-                <ul>
-                    <li>How many pages do you need?</li>
-                    <li>What are the page dimensions? (A4, A5, …, do you have a template?)</li>
-                </ul>
-            </p>
-
-            <p>3. What is it for? Examples:
-                <ul>
-                    <li>Is it for print or web? </li>
-                    <li> Children or adults?</li>
-                    <li>For education or entertainment?</li>
-                </ul>
-
-            </p>
-
-            <p>4. What is your Deadline.</p>
-
-
-            <p>I‘ll get back to you with a price estimate as soon as possible.</p>
-
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-8 col-xs-12">
-            <form class="form" method="POST" enctype="multipart/form-data" >
+            <form class="form" method="POST" enctype="multipart/form-data">
                 {% csrf_token %} {{ form | as_bootstrap}}
-                <div class="form-group col-md-12">
-                    <input class=" btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
+                <div class="row">
+                    <div class="form-group col">
+                        <input class=" btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Request Commition Estimate">
+                    </div>
                 </div>
             </form>
         </div>
     </div>
-    
+
     {% endblock %}

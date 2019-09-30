@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_forms_bootstrap',
+    'stripe',
     'home',
     'hire',
+    'auth',
     'shop',
     'mycart',
     'checkout',
@@ -126,6 +128,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+
+LOGIN_REDIRECT_URL = '/index'
+LOGOUT_REDIRECT_URL = '/index'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [

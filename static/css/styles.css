@@ -60,15 +60,20 @@ a:hover {
     transform: translate(-50%, -50%);
 }
 
+.padding-left-40{
+    padding-left:40px;
+}
+
 .header-hire {
     font-weight: 700;
     color: white;
+    text-decoration:underline;
 }
 
 .header-hire:hover {
     opacity: 0.5;
+    text-decoration:underline;
     color: #fafafa;
-    text-decoration: none;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -325,3 +330,56 @@ figure-caption {
         min-height: 450px;
     }
 }
+.panel-default {
+    border-color: transparent;
+    padding: 0 10px;
+}
+
+.panel-body {
+    border: 1px solid #aebcaf;
+    margin:30px;
+    padding:15px;
+}
+
+.product-description {
+    min-height: 40px;
+}
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+    padding:10px;
+}
+
+
+/*strip css*/
+
+.StripeElement {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;

@@ -9,4 +9,9 @@ $(document).ready(function() {
             $(this).find('figure-caption').css('opacity','0');
         }
     );
+    $(".hidden").hide();
+    $(".show").click(function () {
+        $(".hidden").show(1000, "linear");
+        $(".show").hide(1000, "linear");
+    });
 });

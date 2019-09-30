@@ -27,7 +27,7 @@ class Commition(models.Model):
     cover = models.CharField(max_length=40,
                               choices=boolian,
                               default=NO)
-    setting = models.CharField(max_length=40, blank=False)
+    setting = models.CharField(max_length=500, blank=False)
     number_of_characters = models.IntegerField()
     number_of_pages = models.IntegerField()
     deadline = models.DateField(blank=False)
