@@ -54,6 +54,8 @@ Bootstrap - To easily get the foundations of the design in place.
 
 django - To handle routing on the site and backend.
 
+Stripe - to easily manage card payments
+
 
 ## Testing
 
@@ -75,7 +77,7 @@ A bug was found when editing the recipie name, when the name was updated it remo
 
 Website is deployed through Heroku pages https://recipes-data-project.herokuapp.com/
 
-##how to deploy locally
+## how to deploy locally
 
 the following must be installed
 
@@ -88,7 +90,5 @@ set up a mongoDB account and a databace named recipes (if you do not want the da
 update line 11 of recipes.py "app.config["MONGO_URI"] = 'your mongodb Connection String goes here'" or you can update the enviroment variables in your IDE.
 
 Credits
-
-Content images taken from https://www.digitalartsonline.co.uk/features/illustration/how-draw-food-20-tips-from-leading-illustrators/
-
-https://moaniecat.tumblr.com/
+ 
+all images belong to akirotea 
