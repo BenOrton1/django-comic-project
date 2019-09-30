@@ -68,6 +68,7 @@ stripe is currenly giving error {
 "message": "You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.",
 "type": "invalid_request_error"
 }
+when working with enviroment variable but works correctly when not
 more work needed to fix this bug, contacted tutor support and got no response
 
 register forms has been tested and is working correctly/
@@ -75,6 +76,7 @@ register forms has been tested and is working correctly/
 login form currntly not working and can currently only log in through https://comic-project-django.herokuapp.com/admin
 
 loginrequired has been commented out on checkout views for testing
+and login/register links have been commented out as are not adding anything to this project at this time
 
 a css validator was used and found no errors (https://validator.w3.org/)
 
