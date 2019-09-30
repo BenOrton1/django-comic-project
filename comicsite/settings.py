@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'stripe',
     'home',
     'hire',
-    'auth',
+    'login',
     'shop',
     'mycart',
     'checkout',

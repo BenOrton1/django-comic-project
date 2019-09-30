@@ -19,7 +19,7 @@ from django.views.generic import RedirectView
 from django.views.static import serve
 from home.views import index, about
 from shop import urls as urls_shop
-from auth import urls as urls_auth
+from login import urls as urls_login
 from mycart import urls as urls_cart
 from checkout import urls as urls_checkout
 from hire import urls as urls_hire
@@ -31,7 +31,7 @@ urlpatterns = [
     url(r'^$', index, name='index'),
     url(r'^about$', about, name='about'),
     url(r'^shop/', include(urls_shop)),
-    url(r'^auth/', include(urls_auth)),
+    url(r'^login/', include(urls_login)),
     url(r'^cart/', include(urls_cart)),
     url(r'^checkout/', include(urls_checkout)),
     url(r'^hire/', include(urls_hire)),
