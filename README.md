@@ -33,6 +33,17 @@ the shop was originaly handled by gumroad but is now handled on the website.
 
 ## Features
 
+### existing features
+
+commition form - by having users fill out a form users can commiton art to easily send a message to the artist and get an estimate of the cost. sends an email to the artist with all the relevent details
+
+shop - users can push a button to add item to cart
+
+cart - users can push adjust cart button to edit the items they are buying or by pushing the checkout button they can go to the checkout
+
+checkout - a form allows users to to imput details and purchace products.
+
+
 
 
 ## Technologies Used
@@ -41,9 +52,8 @@ JQuery - The project uses JQuery to simplify DOM manipulation.
 
 Bootstrap - To easily get the foundations of the design in place.
 
-Flask - To interact with mongoDB and to handle routing on the site.
+django - To handle routing on the site and backend.
 
-MongoDB - The Database used to store the recipes.
 
 ## Testing
 
