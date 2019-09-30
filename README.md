@@ -2,25 +2,26 @@
 
 This is a project to made using django to allow comics to be viewed and bought and commitiond to be requested.
 This is an update of anouther poject also made by me that can be seen [here](http://akiroteacomics.com/)
+This Project is not compleated to my satisfation but time has left it in its urrent condition
 
 ## UX I used a basic mockup to guide how i built this project.
 
 mockup of homepage 
 
-![mockup of homepage ](https://imgur.com/ZMJppAu)
+![mockup of homepage ](https://imgur.com/ZMJppAu)https://imgur.com/ZMJppAu
 
 The homepage staded mostly the same as the mockup. The hire link in the header was made bold and underlined for an obvious call to action for anyone who wants a commition.
 There are large links to all the ongoing work by the artist on the homepage as well as links to social media in the navbar and footer allowing easy access to any content by the artist. 
 
 mockup of about page
 
-![mockup of about ](https://imgur.com/q2LbbPq)
+![mockup of about ](https://imgur.com/q2LbbPq)https://imgur.com/q2LbbPq
 
 The about page is just a simple page to provide adional information about the artist.
 
 mockup of hire page
 
-![mockup of hire ](https://imgur.com/kHwu3kX)
+![mockup of hire ](https://imgur.com/kHwu3kX)https://imgur.com/kHwu3kX
 
 The hire page was changed significantly from the original design. it was changed to a form that can be filled
 in. this then give the user feedback about how much this work will cost as well as sending an email with all the details 
