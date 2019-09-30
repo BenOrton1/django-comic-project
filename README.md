@@ -61,21 +61,31 @@ Stripe - to easily manage card payments
 
 All links on the page have been tested and work.
 
-All forms hove been tested to add recipies. all forms work and are easy to follow. When a name that is already being used is entered the correct error is displayed. when nothing is entered the correct error is also displayed.
+All forms have been tested. shop form is currenly giving error 
 
-All forms have been tested to edit the recipie and all work correctly.
+stripe is currenly giving error {
+"error": {
+"message": "You did not provide an API key. You need to provide your API key in the Authorization header, using Bearer auth (e.g. 'Authorization: Bearer YOUR_SECRET_KEY'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.",
+"type": "invalid_request_error"
+}
+more work needed to fix this bug, contacted tutor support and got no response
+
+register forms has been tested and is working correctly/
+
+login form currntly not working and can currently only log in through https://comic-project-django.herokuapp.com/admin
+
+loginrequired has been commented out on checkout views for testing
 
 a css validator was used and found no errors (https://validator.w3.org/)
 
-a bug was found in the routing for edit methourd. the routing was updated.
+Some automated testing a has been done on views and models. 
 
-a bug was found in the javascript for the search bars on the homepage, show and hide were the wrong way round.
+Commition form is working correctly
 
-A bug was found when editing the recipie name, when the name was updated it removed the rest of the recipie. this was fixed by using $set so it only updated that part of the recipie.
 
 ## Deployment
 
-Website is deployed through Heroku pages https://recipes-data-project.herokuapp.com/
+Website is deployed through Heroku pages https://comic-project-django.herokuapp.com/
 
 ## how to deploy locally
 
@@ -85,10 +95,16 @@ pip python 3 Git
 
 Save the project locally or use the git clone command to clone this project. install all the reqirements using "pip -r requirements.txt"
 
-set up a mongoDB account and a databace named recipes (if you do not want the databace named recipies you will need to update line 16 in recipies.py "recipes = mongo.db.recipes")
+update all envirn variable to your details
 
-update line 11 of recipes.py "app.config["MONGO_URI"] = 'your mongodb Connection String goes here'" or you can update the enviroment variables in your IDE.
+install gunicorn though heroku and get enviroment variable
 
-Credits
+get api keys from stripe and update enviroment variable. 
+
+update email and password enviroment variable and 
+
+## Credits
+
+checkout, cart, shop and login app are edited vertions of ecomers app by code institute.
  
 all images belong to akirotea 

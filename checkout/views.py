@@ -9,10 +9,10 @@ from shop.models import Product
 import stripe
 
 # Create your views here.
-stripe.api_key = settings.STRIPE_SECRET
+#stripe.api_key = settings.STRIPE_SECRET
+stripe.api_key = 'sk_test_JAuAVpNTqPYvr6FTPpQDuRCm00km1niNpG'
 
-
-@login_required()
+#@login_required()
 def checkout(request):
     if request.method == "POST":
         order_form = OrderForm(request.POST)
